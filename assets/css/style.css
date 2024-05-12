@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body{
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: wrap;
+}
+.cantainer{
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 25px 30px;
+  box-shadow: 0 0 30px #2ed68d26;
+}
+.cantainer h2{
+  color:#002765;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin:30px;
+  padding: 8px;
+  position: relative;
+}
+.header{
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  /* outline: 3px groove #d7d7d7; */
+  border: none;
+  background: #fff;
+  /* border-radius: 30px; */
+  outline-offset: 2px;
+  margin-bottom: 25px;
+  border-bottom: #00d2ff;
+  border-width: 2px;
+}
+input{
+  flex:1;
+  border: none;
+  outline: none;
+  padding:2px;
+  background:transparent;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.line{
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  margin-bottom: 20px;
+  border-radius: 30px;
+  margin-top: -25px;
+
+}
+input::placeholder{
+  color:#424141
+}
+button{
+  border: none;
+  outline: none;
+  background: #002765;
+  color:#fff;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 1px;
+  font-size: 18px;
+  border-radius: 30px;
+  margin: 1px;
+}
+button:hover{
+  background: linear-gradient(180deg, #00d2ff 0%, #3a47d5 100%);
+}
+ul li{
+  list-style: none;
+  font-size: 17px;
+  margin-bottom: 10px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  letter-spacing: 1px;
+  overflow:hidden;
+  scrollbar-color: #00d2ff;
+  font-weight: 500;
+  margin-block: 10px;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  font-size: 22px;
+  border-radius: 50%;
+  background-image: url(../img/uncheck.png);
+  background-size: cover;
+  background-position: center;
+  top: 7px;
+  left: 8px;
+}
+ul li.checked{
+  background: linear-gradient(180deg, #00d2ff 0%, #3a47d5 100%);
+  color: #102158;
+  border-radius: 50px;
+  font-weight: 600;
+}
+ul li.checked::before{
+  background-image: url(../img/check.png);
+  background-size: cover;
+}
+ul li span{
+  position: absolute;
+  top:10px;
+  right: 0px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size:22px;
+  color:#000;
+  text-align:center;
+  border-radius: 50%;
+}
+ul li .checked span{
+  background-color: #a3afb5;
+  color:#fff;
+}
+ul li span:hover{
+  background-color: #a3afb5;
+  color:#000;
+}
+ul li span:hover{
+  background-color: #a3afb5;
+  color:#000;
+}
+
+   /*~~~~RESPONSIVE~~~~*/
+
+/*~~~~for max-1440~~~~*/
+@media(max-width: 1440px){
+  .cantainer{
+    width: 90%;
+  }
+h2{
+  font-size: 30px;
+  font-weight: 900;
+}
+button{
+  font-size: 18px;
+  padding: 10px 15px;
+  
+}
+input{
+  font-size: 18px;
+}
+}
+
+/*~~~~for max-1024~~~~*/
+@media(max-width: 1024px){
+  .cantainer{
+    width: 100%;
+  }
+h2{
+  font-size: 15px;
+}
+/*~~~~for max-768~~~~*/
+}
+@media(max-width: 325px){
+  .cantainer{
+    width: 90%;
+  }
+h2{
+  font-size: 15px;
+}
+
+}
+
+/*~~~~for max-425~~~~*/
+@media(max-width: 325px){
+  .cantainer{
+    width: 90%;
+  }
+h2{
+  font-size: 15px;
+}
+
+}
+/*~~~~for max-375~~~~*/
+@media(max-width: 325px){
+  .cantainer{
+    width: 90%;
+  }
+h2{
+  font-size: 15px;
+}
+}
+/*~~~~for max-325~~~~*/
+@media(max-width: 325px){
+  .cantainer{
+    width: 90%;
+  }
+  input{
+    font-size: 15px;
+  }
+h2{
+  font-size: 10px;
+}
+button{
+  font-size: 10px;
+  font-weight: 200;
+}
+
+}
